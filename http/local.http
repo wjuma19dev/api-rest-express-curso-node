@@ -1,0 +1,26 @@
+### Get
+GET http://localhost:3000
+
+### Fetch all posts
+GET http://localhost:3000/posts
+
+### Create one post
+POST http://localhost:3000/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "A third post",
+    "content": "This is a third post"
+}
+
+### Update a post
+PATCH http://localhost:3000/posts/1
+content-type: application/json
+
+{
+    "title": "First post",
+    "content": "This is a First post"
+}
+
+### Delete a post
+DELETE http://localhost:3000/posts/1
